@@ -8,7 +8,6 @@ export class UsuarioController {
 
 constructor(private usuarioRepository: UsarioRepository){}
 
-
   @Post()
   async criaUsuario(@Body() dadosDoUsuario) {
     this.usuarioRepository.salvar(dadosDoUsuario);
